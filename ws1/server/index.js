@@ -1,5 +1,5 @@
-import {Server} from 'ws';
-const server = new Server({port: '3000'});
+import {WebSocketServer} from "ws";
+const server = new WebSocketServer({port: '5000'});
 
 server.on('connection', (socket) => {
     socket.on('message', (msg)=> {
